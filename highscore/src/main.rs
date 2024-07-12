@@ -11,7 +11,7 @@ impl HighScores {
     }
 
     pub fn scores(&self) -> &[u32] {
-        &self.scores
+        &self.scores[..]
     }
 
     pub fn latest(&self) -> Option<u32> {
