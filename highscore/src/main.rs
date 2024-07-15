@@ -25,6 +25,7 @@ impl HighScores {
     pub fn personal_top_three(&self) -> Vec<u32> {
         // had to clone since it was a vector and it takes ownership
         let mut score_copy = self.scores.clone();
+        // sort it descending
         score_copy.sort();
         //copy the iterable and reverse it. from this list, retrieve the first three values
         score_copy.iter().copied().rev().take(3).collect()
