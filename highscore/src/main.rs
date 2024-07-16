@@ -28,5 +28,6 @@ impl HighScores {
 }
 
 fn main(){
-    print!("Testing")
+    print!("Testing");
+    println("{:?}", HighScores);
 }
