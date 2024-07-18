@@ -5,7 +5,7 @@ pub struct HighScores {
 impl HighScores {
     pub fn new(score: &[u32]) -> Self {
         HighScores {
-            score: Vec::from()
+            score: Vec::from(score)
         }
     }
     pub fn scores(&self) -> &[u32] {
