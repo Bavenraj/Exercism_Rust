@@ -18,7 +18,7 @@ impl HighScores {
         self.score.iter().max().copied()
     }
     pub fn personal_top_three(&self) -> Vec<u32> {
-        // had to clone since it was a vector and it takes ownership
+        // had to clone since it is a vector and it takes ownership
         let mut score_copy = self.score.clone();
         // sort it descending
         score_copy.sort();
