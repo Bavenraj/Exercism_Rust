@@ -8,7 +8,7 @@ impl HighScores {
             score: Vec::from(score)
         }
     }
-    pub fn scores(&self) -> &[u32] {
+    pub fn scores(&self) -> &[u3] {
         &self.score[..]
     }
     pub fn latest(&self) -> Option<u32> {
@@ -29,5 +29,5 @@ impl HighScores {
 
 fn main(){
     print!("Testing");
-    println("{:?}", HighScore);
+    println("{:?}", HighScores);
 }
