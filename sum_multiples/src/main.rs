@@ -13,6 +13,7 @@ pub fn sum_of_multiples(limit: u32, factors: &[u32]) -> u32 {
             let multiple = i * factor;
             //check duplicates
             if !intermediate_result.contains(&multiple) {
+                //add int if it is not duplicates
                 intermediate_result.push(multiple);
             }
             i += 1;
