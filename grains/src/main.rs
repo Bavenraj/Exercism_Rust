@@ -1,7 +1,3 @@
-enum SquareResult<T, E> {
-    Ok(T),
-    Err(E),
-}
 pub fn square(s: u32) -> u64 {
     if s > 64 || s == 0{
         panic!("Square must be between 1 and 64")
@@ -15,4 +11,10 @@ pub fn total() -> u64 {
          sum = sum + square(i);
     }
     sum
+}
+fn main(){
+    let m = square(2);
+    println!("The value of square is {m}");
+    let n = total();
+    println!("The total grains is {n}");
 }
