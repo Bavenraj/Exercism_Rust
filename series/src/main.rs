@@ -1,3 +1,5 @@
+use std::fmt::Display;
+
 pub fn series(digits: &str, len: usize) -> Vec<String> {
     let mut list: Vec<String> = Vec::new();
     if digits.len() < len {
@@ -11,4 +13,8 @@ pub fn series(digits: &str, len: usize) -> Vec<String> {
         right = left + len - 1;
     }
     list
+}
+fn main(){
+    let m = series("1234", 2);
+    println!("The output value is {m:?}");
 }
