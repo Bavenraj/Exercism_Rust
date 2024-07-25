@@ -19,6 +19,6 @@ fn main(){
     println!("The output value is {m:?}");
     let n = series("271617", 3);
     println!("The output value is {n:?}");
-    let o = series("1234", 2);
+    let o = series("827293939", 10);
     println!("The output value is {o:?}");
 }
