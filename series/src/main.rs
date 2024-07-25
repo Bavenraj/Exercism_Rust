@@ -17,7 +17,7 @@ pub fn series(digits: &str, len: usize) -> Vec<String> {
 fn main(){
     let m = series("1234", 2);
     println!("The output value is {m:?}");
-    let n = series("1234", 2);
+    let n = series("271617", 3);
     println!("The output value is {n:?}");
     let o = series("1234", 2);
     println!("The output value is {o:?}");
