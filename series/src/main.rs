@@ -19,4 +19,6 @@ fn main(){
     println!("The output value is {m:?}");
     let n = series("1234", 2);
     println!("The output value is {n:?}");
+    let o = series("1234", 2);
+    println!("The output value is {o:?}");
 }
