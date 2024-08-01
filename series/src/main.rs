@@ -2,7 +2,7 @@ use std::fmt::Display;
 
 pub fn series(digits: &str, len: usize) -> Vec<String> {
     let mut list: Vec<String> = Vec::new();
-    if digits() < len {
+    if digits.len() < len {
         return list;
     }
     let mut left = 0;
