@@ -1,4 +1,3 @@
-use std::fmt::Display;
 
 pub fn series(digits: &str, len: usize) -> Vec<String> {
     let mut list: Vec<String> = Vec::new();
